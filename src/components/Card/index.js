@@ -5,7 +5,7 @@ const Card = ({ card }) => {
   return (
     <CardContainer>
       <div className="img-wrapper">
-        <img src={ card.imageUrl } alt="img green lantern" />
+        <img src={ card.imageUrl } alt="green lantern" />
       </div>
 
       <div className="info-card">

@@ -1,12 +1,12 @@
 import React from 'react';
-import Dashboard from './pages/Dashboard/index';
+import Root from './routes/Root';
 import GlobalStyle from './styles/global';
 
 function App() {
 
   return (
     <>
-      <Dashboard />
+      <Root/>
       <GlobalStyle />
     </>
   );
