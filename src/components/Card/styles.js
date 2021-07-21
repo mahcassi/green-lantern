@@ -36,7 +36,6 @@ export const CardContainer = styled.div`
     width: 200px;
     height: 110px;
     position: absolute;
-    top: 150px;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 50px;
