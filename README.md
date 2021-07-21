@@ -1,6 +1,6 @@
-# Sistema de gestão das tropas dos lanternas verdes e seus setores
+# Sistema de gestão das tropas dos lanternas verdes
                      
-# Sobre 
+## Sobre 
 O sistema permite o cadastro, listagem e edição de dados de todas as tropas de lanternas verdes.
 A aplicação foi feita com ReactJS e JavaScript. Criei uma API REST fake com JSON-Server para o armazenamento de dados. 
 
