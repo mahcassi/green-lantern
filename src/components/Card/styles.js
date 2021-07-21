@@ -4,9 +4,11 @@ export const CardContainer = styled.div`
   width: 300px;
   height: 360px;
   background: #000;
+  color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   &:hover .info-card {
     opacity: 1;

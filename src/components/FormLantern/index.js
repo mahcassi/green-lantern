@@ -17,9 +17,17 @@ const FormLantern = ({ id }) => {
   const [values, setValues] = useState(initialValue);
   const history = useHistory();
 
+  useEffect(() => {
+    if (id) {
+      axios.get(`http://localhost:5000/lanterns/${id}`)
+        .then((response) => {
+          setValues(response.data);
+        })
+    }
+  }, [id]);
+
   function onChange(ev) {
     const { name, value } = ev.target;
-
     setValues({ ...values, [name]: value });
   }
 
@@ -37,34 +45,33 @@ const FormLantern = ({ id }) => {
       });
   }
 
-
   return (
     <Form onSubmit={ onSubmit }>
       <h1>Cadastro de Lanternas Verdes</h1>
 
       <div className="form-group">
         <label htmlFor="name">Nome</label>
-        <input type="text" name="name" id="name" onChange={ onChange } />
+        <input type="text" name="name" id="name" onChange={ onChange } value={values.name}/>
       </div>
 
       <div className="form-group">
         <label htmlFor="idade">Idade</label>
-        <input type="number" name="idade" id="idade" onChange={ onChange } />
+        <input type="number" name="idade" id="idade" onChange={ onChange } value={values.idade}/>
       </div>
 
       <div className="form-group">
         <label htmlFor="planetaNatal">Planeta Natal</label>
-        <input type="text" name="planetaNatal" id="planetaNatal" onChange={ onChange } />
+        <input type="text" name="planetaNatal" id="planetaNatal" onChange={ onChange } value={values.planetaNatal}/>
       </div>
 
       <div className="form-group">
         <label htmlFor="setor">Setor</label>
-        <input type="number" name="setor" id="setor" onChange={ onChange } />
+        <input type="number" name="setor" id="setor" onChange={ onChange } value={values.setor}/>
       </div>
 
       <div className="form-group">
         <label htmlFor="imageUrl">Imagem (URL)</label>
-        <input type="text" name="imageUrl" id="imageUrl" onChange={ onChange } />
+        <input type="text" name="imageUrl" id="imageUrl" onChange={ onChange } value={values.imageUrl}/>
       </div>
 
       <button type="submit">Salvar</button>

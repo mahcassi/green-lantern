@@ -11,10 +11,10 @@
     {
       "id": 2,
       "name": "Will",
-      "idade": 18,
+      "idade": "25",
       "imageUrl": "https://i.pinimg.com/originals/5e/6a/8e/5e6a8edda5c9ec7c75eddf47b8026051.jpg",
       "planetaNatal": "lanterna",
-      "setor": 52
+      "setor": "49"
     },
     {
       "id": 3,
@@ -31,14 +31,6 @@
       "imageUrl": "https://i1.wp.com/mir-s3-cdn-cf.behance.net/project_modules/max_1200/641a2e93131501.5e5d42297749e.jpg?resize=620%2C621&ssl=1",
       "planetaNatal": "lanterna",
       "setor": 52
-    },
-    {
-      "name": "aaaa",
-      "idade": 0,
-      "planetaNatal": "",
-      "setor": 0,
-      "imageUrl": "",
-      "id": 5
     }
   ]
 }

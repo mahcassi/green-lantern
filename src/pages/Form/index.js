@@ -8,7 +8,7 @@ const Form = () => {
 
   return (
     <Container>
-      <FormLantern />
+      <FormLantern id={id ? Number.parseInt(id, 10) : null}/>
     </Container>
   );
 }
